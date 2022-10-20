@@ -11,6 +11,7 @@
     --bg-color: #020312;
     --text-color: #fff;
     --main-color: #eb4a4a;
+    --blue-color: #704aeb;
     --second-color: gray;
     --other-color: #12141c;
     --h1-font: 5.2rem;
@@ -100,6 +101,10 @@ span {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 0.5rem;
+    background: #12141c;
+    border-radius: 0.5rem;
+    padding: 15px 10px;
+    text-align: center;
 }
 .home-text h3 span {
     color: aquamarine;
@@ -116,10 +121,31 @@ span {
     border: 1px solid var(--main-color);
     transition: all .40s ease;
 }
+.resume {
+    display: inline-block;
+    padding: 14px 40px;
+    border-radius: 0.5rem;
+    font-size: 17px;
+    font-weight: 500;
+    background: var(--blue-color);
+    color: var(--text-color);
+    border: 1px solid var(--blue-color);
+    transition: all .40s ease;
+    margin-left: 1rem;
+}
 .btn:hover {
     transform: scale(1.01) translateY(-5px);
     background: transparent;
     border: 1px solid var(--main-color);
+    color: var(--main-color);
+    text-shadow: 1px 2px 2px var(--bg-color);
+}
+.resume:hover {
+    transform: scale(1.01) translateY(-5px);
+    background: transparent;
+    border: 1px solid var(--blue-color);
+    color: var(--blue-color);
+    text-shadow: 1px 2px 2px var(--bg-color);
 }
 
 header.sticky {
@@ -223,6 +249,12 @@ header.sticky {
 }
 .row h3 span {
     color: rgb(25, 244, 171);
+}
+.slash {
+    color: var(--text-color);
+}
+.t2 {
+    color: var(--blue-color);
 }
 
 .projects-content {
