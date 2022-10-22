@@ -30,7 +30,7 @@
         <div class="home-text">
             <h4>Hello</h4>
             <h1>I'm Bo <br><span>Hubbard</span></h1>
-            <h3><span>Software</span> Engineer</h3>
+                <h3 >I'm a <em class="type"></em></h3>
             
             <a href="#contact" class="btn">Contact me</a>
             <a href="/assets/img/resume.pdf" class="resume" download>Resume</a>
@@ -136,4 +136,13 @@
     <a href="#" class="top"><i class='bx bx-up-arrow-alt' ></i></a>
 </body>
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typed = new Typed(".type", {
+        strings:["<span>Graphic</span> Designer", "<span>Full Stack</span> Developer", "<span>Software</span> Engineer"],
+        typeSpeed: 120,
+        backSpeed: 110,
+        loop: true
+    })
+</script>
 </html>
